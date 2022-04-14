@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub page as PWA template</title>
+  <link rel="canonical" href="https://ictylor.github.io/pwa-example/" />
+  <link rel="manifest" href="/pwa-example/manifest.webmanifest">
+</head>
+<body>
+  <h1>GitHub page as PWA template</h1>
+  <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/pwa-example/sw.js',
+          {scope: '/pwa-example/'}
+        )
+      }
+  </script>
+</body>
+</html>
